@@ -3,11 +3,15 @@
 
 \RequirePackage{tikz}
 \usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
 
 \newcommand{\Permutator}[1]{
     \tikz[baseline = -3.5 pt]{
-        \node {I};
-        \draw[{Classical TikZ Rightarrow[length = 1.8pt, width=2.2pt]}-{Classical TikZ Rightarrow[length = 1.8pt, width=2.2pt]}, thick]
+        \node(letter) {I};
+        \draw[{Classical TikZ Rightarrow[length = 1.8pt, width=2.2pt]}-{Classical TikZ Rightarrow[length = 1.8pt, width=2.2pt]}, semithick]
             (0,-0.016) arc [start angle = -90, end angle = 90, x radius = 1.2 mm, y radius = 0.65 mm];
+        \node[right=-2pt of letter] (argument_first) {(};
+        \node[right=-6pt of argument_first, scale=0.65] (hashtag) {\#};
+        \node[right=-5pt of hashtag] (argument_last) {p)};
     }
 }
