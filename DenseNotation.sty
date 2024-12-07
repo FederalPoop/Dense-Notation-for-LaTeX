@@ -12,6 +12,17 @@
             (0,-0.016) arc [start angle = -90, end angle = 90, x radius = 1.2 mm, y radius = 0.65 mm];
         \node[right=-2pt of letter] (argument_first) {(};
         \node[right=-6pt of argument_first, scale=0.65] (hashtag) {\#};
-        \node[right=-5pt of hashtag] (argument_last) {p)};
+        \node[right=-5pt of hashtag] (argument_last) {#1)};
+    }
+}
+
+\newcommand{\Exchange}{
+    \tikz[baseline=-3.5pt]{
+        \draw[semithick] (0,-0.115) -- (0,0.105);
+        \draw[semithick] (-0,0.1) -- (-0.03,0.1);
+        \draw[-{Latex[length = 1.3pt, width=2.3pt]}, semithick] (0,-0.01) .. controls (0.1, -0.01) and (0.08, 0.1) .. (0.2,0.1);
+        \draw[-{Latex[length = 1.3pt, width=2.3pt]}, semithick] (0, 0.1) ..controls (0.08, 0.1) and (0.1, -0.01) .. (0.2,-0.01);
+        \draw[semithick] (-0.03,-0.11) -- (0.18, -0.11);
+        \draw[semithick] (0.13,-0.111) arc[start angle = -90, end angle = 0, x radius = 1.6pt, y radius = 0.9pt]
     }
 }
