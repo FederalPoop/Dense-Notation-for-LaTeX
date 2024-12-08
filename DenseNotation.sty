@@ -26,3 +26,34 @@
         \draw[semithick] (0.13,-0.111) arc[start angle = -90, end angle = 0, x radius = 1.6pt, y radius = 0.9pt]
     }
 }
+
+\newcommand{\Probability}{
+    \tikz[baseline = -3.5]{
+        \node {P};
+        \foreach \y in {0.1, 0, -0.1} {
+            \filldraw (-0.18,\y) circle [radius = 0.6pt];
+            \filldraw (0.17,\y) circle [radius = 0.6pt];
+        }
+    }
+}
+
+\newcommand{\ProbabilityDensity}{
+    \tikz[baseline = -3.5]{
+        \node {d};
+        \foreach \y in {0.1, 0, -0.1} {
+            \filldraw (-0.17,\y) circle [radius = 0.6pt];
+            \filldraw (0.17,\y) circle [radius = 0.6pt];
+        }
+    }
+}
+
+\newcommand{\ProbabilityCurrentDensity}{
+    \tikz[baseline = -2]{
+        \draw[-{Classical TikZ Rightarrow[width = 1.8pt]}] (-0.1, 0.21) -- (0.1, 0.21);
+        \node {j};
+        \foreach \y in {0.1, 0, -0.1} {
+            \filldraw (-0.15,\y) circle [radius = 0.6pt];
+            \filldraw (0.15,\y) circle [radius = 0.6pt];
+        }
+    }
+}

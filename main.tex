@@ -1,9 +1,23 @@
 \documentclass{article}
 \usepackage{tikz}
+\usepackage{amsmath}
 \usepackage{DenseNotation}
 
 \begin{document}
 
-    Testo di esempio $\Exchange \psi(x_1, x_2)$
+    \noindent
+    Permutator: $\Permutator{3} $\\
+    Exchange: $\Exchange \psi(x_1, x_2) = \psi(x_2, x_1)$\\
+    Probability (mass): $\Probability $ \\
+    Probability density: $\ProbabilityDensity $ \\
+    Probability current density: $\ProbabilityCurrentDensity := \psi\Vec{\nabla}\bar{\psi} - \bar{\psi}\Vec{\nabla}\psi $ \\
+    Kronecker's delta: $\tikz[baseline = -1.8]{
+        \node(main){$\delta_{ij}$};
+        \node at (-0.02, 0.16) [scale = 0.5] {K};
+    } $ \\
+    Dirac's delta: $\tikz[baseline = -3.5]{
+        \node(main){$\delta$};
+        \node at (0.108, 0.11) [scale = 0.55] {D};
+    }(x) $
 
 \end{document}
