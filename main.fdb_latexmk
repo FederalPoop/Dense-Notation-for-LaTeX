@@ -1,9 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1733843855.46211 "/home/federalpoop/Scrivania/Università/Studio/Notazione Densa/main.tex" "main.pdf" "main" 1733843855.89847 0
+["pdflatex"] 1733844306.86769 "/home/federalpoop/Scrivania/Università/Studio/Notazione Densa/main.tex" "main.pdf" "main" 1733844307.31634 0
   "/etc/texmf/web2c/texmf.cnf" 1730212085.7155 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/federalpoop/Scrivania/Università/Studio/Notazione Densa/main.tex" 1733843855.28781 529 5757694517c7d4ad08eac5425fc216cd ""
+  "/home/federalpoop/Scrivania/Università/Studio/Notazione Densa/main.tex" 1733844306.69149 645 f342e2c166ac8c2c85dbae39e7ace9a4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
@@ -96,9 +97,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1730217357.53632 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1730217431 8213870 b2c56c01b39136e1db9670880a3b1c92 ""
-  "DenseNotation.sty" 1733843841.47298 2852 962ffd7b5d796cff8fe004cfd2a6e965 ""
-  "main.aux" 1733843855.85981 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.tex" 1733843855.28781 529 5757694517c7d4ad08eac5425fc216cd ""
+  "DenseNotation.sty" 1733844158.13588 2548 3ff886dfe132a0e46e6003126b8bc003 ""
+  "main.aux" 1733844307.27541 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1733844306.69149 645 f342e2c166ac8c2c85dbae39e7ace9a4 ""
   (generated)
   "main.aux"
   "main.log"

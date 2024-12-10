@@ -60,15 +60,16 @@
 
 \newcommand{\Kronecker}[1][]{
     \tikz[baseline = -3.5]{
-            \node(main){$\delta $};
-            \node at (0.1, 0.12) [scale = 0.5] {K};
-            \IfBlankTF{#1}{}{\node at (0.15, -0.15) [scale = 0.6] {$#1$}}
-        }
+        \node(main){$\delta $};
+        \node at (0.1, 0.12) [scale = 0.5] {K};
+        \IfBlankF{#1}{\node at (0.15, -0.15) [scale = 0.6] {$#1$}}
+    }
 }
 
-\newcommand{\Dirac}{
+\newcommand{\Dirac}[1][]{
     \tikz[baseline = -3.5]{
         \node(main){$\delta$};
         \node at (0.108, 0.11) [scale = 0.55] {D};
+        \IfBlankF{#1}{\node at (0.14, -0.13) [scale = 0.7] {$#1$}}
     }
 }
