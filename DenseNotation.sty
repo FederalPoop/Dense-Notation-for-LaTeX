@@ -58,11 +58,12 @@
     }
 }
 
-\newcommand{\Kronecker}{
-    \tikz[baseline = -1.8]{
-        \node(main){$\delta_{ij}$};
-        \node at (-0.02, 0.16) [scale = 0.5] {K};
-    }
+\newcommand{\Kronecker}[1][]{
+    \tikz[baseline = -3.5]{
+            \node(main){$\delta $};
+            \node at (0.1, 0.12) [scale = 0.5] {K};
+            \IfBlankTF{#1}{}{\node at (0.15, -0.15) [scale = 0.6] {$#1$}}
+        }
 }
 
 \newcommand{\Dirac}{
