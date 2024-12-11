@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{DenseNotation}
 
+\RequirePackage{amsfonts}
 \RequirePackage{tikz}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{positioning}
@@ -71,5 +72,40 @@
         \node(main){$\delta$};
         \node at (0.108, 0.11) [scale = 0.55] {D};
         \IfBlankF{#1}{\node at (0.14, -0.13) [scale = 0.7] {$#1$}}
+    }
+}
+
+\newcommand{\EulerGamma}{
+    \tikz[baseline = -3.4]{
+        \node at (0,0) {$\Gamma $};
+        \node at (0.11, 0.0705) [scale = 0.4] {E}
+        % \draw (0.085, 0.113) -- (0.145, 0.113);
+        % \draw (0.085, 0.08) -- (0.125, 0.08);
+        % \draw (0.09, 0.047) -- (0.145, 0.047);
+    }
+}
+
+\newcommand{\Parity}{
+    \tikz[baseline = -3.4]{
+        \node at (0,0) {$\mathbb{I} $};
+        \draw[semithick] (-0.02, 0.11) arc [start angle = 90, end angle = 270, y radius = 1.6pt, x radius = 3 pt];
+        \draw[semithick] (0.027, -0.002) arc [start angle = -90, end angle = 90, y radius = 1.6pt, x radius = 3 pt];
+        \draw[semithick] (-0.02, 0.11) -- (0.027, 0.11)
+    }
+}
+
+\newcommand{\DefinedAsL}{
+    \tikz[baseline = -1.85] {
+        \node at (0,0) {=};
+        \filldraw (-0.18, 0.059) circle [radius = 0.3pt];
+        \filldraw (-0.18, -0.012) circle [radius = 0.3pt]
+    }
+}
+
+\newcommand{\DefinedAsR}{
+    \tikz[baseline = -1.85] {
+        \node at (0,0) {=};
+        \filldraw (0.18, 0.059) circle [radius = 0.3pt];
+        \filldraw (0.18, -0.012) circle [radius = 0.3pt]
     }
 }
